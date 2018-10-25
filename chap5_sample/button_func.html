@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eventサンプル</title>
+  </head>
+  <body>
+    <input type="button" id="button" value="クリック！">
+    <script>
+      var button = document.getElementById("button");
+      //button.click = clickButton;
+
+      button.onclick = function()
+      {
+          window.alert("クリックしました！");
+      }
+    </script>
+  </body>
+</html>

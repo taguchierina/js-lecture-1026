@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>WEB APIサンプル</title>
+    <script>
+    // JSONデータを受け取る関数
+    function jsonFlickrFeed(data) {
+      // itemsキーで検索結果を取得
+      for (i=0;i<data.items.length;i++) {
+        var item = data.items[i];
+        console.log(item);
+        console.log(item.title); // タイトル
+        console.log(item.tags);  // タグ
+        console.log(item.link);  // 投稿した写真のURL
+      }
+    }
+    </script>
+    <script src="https://api.flickr.com/services/feeds/photos_public.gne?format=json&tags=dog"></script>
+  </head>
+  <body>
+  </body>
+</html>

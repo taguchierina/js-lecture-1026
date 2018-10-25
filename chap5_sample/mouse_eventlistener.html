@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eventサンプル</title>
+  </head>
+  <script>
+    window.addEventListener("DOMContentLoaded", function(){
+      var image = document.getElementById("catImg");
+      // マウスオーバー時
+      image.addEventListener("mouseover", function(){
+            this.src = "images/cat2.jpg";
+      });
+
+      // マウスアウト時
+      image.addEventListener("mouseout", function(){
+            this.src = "images/cat1.jpg";
+      });
+    });
+  </script>
+  <body>
+    <img id="catImg" src="images/cat1.jpg" ><br>
+  </body>
+</html>

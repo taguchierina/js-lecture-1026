@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eventサンプル</title>
+    <script>
+      window.addEventListener("DOMContentLoaded", function(){
+        var button = document.getElementById("button");
+
+        button.addEventListener("click", function()
+          {
+              window.alert("クリックしました！");
+          }
+        );
+
+        button.addEventListener("click", function()
+          {
+              window.alert("もう一度アラートを出します！");
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <input type="button" id="button" value="クリック！">
+  </body>
+</html>
